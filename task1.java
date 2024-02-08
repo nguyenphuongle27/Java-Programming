@@ -55,6 +55,7 @@ import java.util.Scanner;
         long tich = (long)e * h; // 10^6 * 10^6 = 10^12 (int chỉ lưu được từ -2.10^9 đến 2.10^9) -> ko thể lưu đc ở int mà phải sd long
         // int * int -> kq sẽ lưu tạm ở int sau đó mới gán cho tich -> 10^12 lưu vào int thì sẽ bị tràn sau đó nó lấy kq đã bị tràn gán cho tích thì kq là sai
         //-> phải can thiệp vào phép nhân -> ep 1 trong 2 thành long (ép kiểu)
+        // hoặc có thể viết thành -> 1L * e * h [không đc viết e*h*1L <- cái này là cách viết sai]
         System.out.println(tich);
 
 
