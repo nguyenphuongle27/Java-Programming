@@ -59,7 +59,7 @@ public class task2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        // kiem tr n >= 10 va n <=20 neu dung in Yes, sai in No
+        // kiem tra n >= 10 va n <=20 neu dung in Yes, sai in No
         if(n >= 10 && n <=20){
             System.out.println("Yes");
         }

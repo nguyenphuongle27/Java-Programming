@@ -71,15 +71,55 @@ public class task2_2 {
 
 
         //6
-        if(N >= 30 && ((N%2 == 0)||(N%3==0)||(N%5==0))){
+        if((N >= 30) && ((N%2 == 0)||(N%3==0)||(N%5==0))){
             System.out.println("Yes");
         }
         else{
             System.out.println("No");
         }
 
+
         //7
-        if()
+        int donVi = N%10; //lấy số tận cùng của số N ->Kiểm tra chữ số tận cùng là số nguyên số
+        if(N>=10 && N <=99){
+            //So nguyen to
+            if ((donVi==2)||(donVi==3)||(donVi==5)||(donVi==7)){
+                System.out.println("Yes");
+            }
+            else{
+                System.out.println("No");
+            }
+        }
+        else{
+            System.out.println("No");
+        }
+
+
+        //8
+        if(N<=100 && N%23==0){
+            System.out.println("Yes");
+        }
+        else{
+            System.out.println("No");
+        }
+
+
+        //9
+        if(N<10 || N>20){
+            System.out.println("Yes");
+        }
+        else{
+            System.out.println("No");
+        }
+
+
+        //10
+        if(donVi % 3 == 0){
+            System.out.println("Yes");
+        }
+        else{
+            System.out.println("No");
+        }
     }
     
 }
