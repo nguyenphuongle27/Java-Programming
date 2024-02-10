@@ -53,7 +53,7 @@ public class task2 {
         if ( A && B && (C || D)){ // trừ khi 1 cái thực hiện trước,1 cái thực hiện sau, khi nay ( C || D) là 1 mệnh đề
 
         } 
-    }*/
+    }
 
     //if else long nhau
     public static void main(String[] args) {
@@ -84,5 +84,56 @@ public class task2 {
             System.out.println("NO");
         }
         //if có thể ko cần else nhưng else luôn cần if đi trước
+    } */
+
+
+    //Câu lệnh if và else if
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        //Kiểm tra ngày của tháng
+        int t = sc.nextInt(); //biến tháng
+        //cái này viết quá dài dòng và có nhiều câu lệnh giống nhau như là nhiều tháng có 31 ngày giống nhau
+        if(t==1){
+            System.out.println("31");
+        }
+        else if(t==2)
+        {
+            System.out.println("28");
+        }
+        else if(t==3){
+            System.out.println("31");
+        }
+        else if(t==4){
+            System.out.println("30");
+        }
+        else if(t==5){
+            System.out.println("31");
+        }
+        else if (t==6){
+            System.out.println("30");
+        }
+        else if(t==7){
+            System.out.println("31");
+        }
+        else{
+            System.out.println("Khong hop le !");
+        }
+
+
+
+        //Cách 2 viết ngắn gọn hơn
+        int k = sc.nextInt();
+        if (k==1 || k==3 || k==5 ||k==7 || k==8 || k==10 || k==12 ){
+            System.out.println("31 days");
+        }
+        else if (k==4 || k==6 || k==9 || k==1){
+            System.out.println("30 days");
+        }
+        else if (k==2){
+            System.out.println("28 days");
+        }
+        else{
+            System.out.println("Wrong!");
+        }
     }
 }
