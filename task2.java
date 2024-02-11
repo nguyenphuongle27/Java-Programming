@@ -141,7 +141,22 @@ public class task2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         char kiTu = 'A';
-        System.out.println((int)kiTu);
+        char kyTu = 'a';
+
+        System.out.println((int)kiTu);//in ra mã ASCII
         System.out.println(kiTu + 3);//khi này thì kiTu này sẽ chở thành cái mã ASCII luôn -> nó lấy mã ASCII ở kí tự này nó tính toán
+        //miễn là có tính toán (cộng trừ nhân chia) thì nó sẽ tự chuyển kí tự sang mã ASCII để tính toán
+        kiTu += 32;
+        kyTu -= 32;
+        System.out.println(kiTu); //chuyển từ A sang a
+        System.out.println(kyTu);
+        
+
+        //ép kiểu 
+        char word = 'u';
+        int b = word - 32 ;
+        char wordu = (char)b ;
+        System.out.println(wordu);
+
     }
 }
