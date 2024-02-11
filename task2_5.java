@@ -6,9 +6,27 @@
  Sample Output: 4
 */
 
+import java.util.Scanner;
+
 public class task2_5 {
     public static void main(String[] args) {
-        
+        Scanner sc = new Scanner(System.in);
+        int n,m,a;
+        n=sc.nextInt(); 
+        m=sc.nextInt(); 
+        a=sc.nextInt();
+        if((1<=n && n <=10000000000L) && (1<=m && m <=10000000000L) && (1<=a && a <=10000000000L)){
+            int d = n/a;
+            int g = m/a;
+            float soLuong = (float)d*g;
+            System.out.println("n là "+ n);
+            System.out.println("m là "+ m);
+            System.out.println("a là "+ a);
+            System.out.println(soLuong);
+        }
+        else{
+            System.out.println("Khong hop le !");
+        }
     }
     
 }
