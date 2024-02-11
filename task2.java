@@ -84,7 +84,7 @@ public class task2 {
             System.out.println("NO");
         }
         //if có thể ko cần else nhưng else luôn cần if đi trước
-    } */
+    } 
 
 
     //Câu lệnh if và else if
@@ -134,6 +134,14 @@ public class task2 {
         }
         else{
             System.out.println("Wrong!");
-        }
+        } 
+    }*/
+
+    //Bảng mã ASCII
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char kiTu = 'A';
+        System.out.println((int)kiTu);
+        System.out.println(kiTu + 3);//khi này thì kiTu này sẽ chở thành cái mã ASCII luôn -> nó lấy mã ASCII ở kí tự này nó tính toán
     }
 }
